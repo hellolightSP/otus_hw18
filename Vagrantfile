@@ -5,13 +5,13 @@
 
 MACHINES = {
 :inetRouter => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [
                    {ip: '192.168.255.1', adapter: 2, netmask: "255.255.255.252", virtualbox__intnet: "router-net"},
                 ]
         },
   :centralRouter => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [
                    {ip: '192.168.255.2', adapter: 2, netmask: "255.255.255.252", virtualbox__intnet: "router-net"},
                    {ip: '192.168.0.1', adapter: 3, netmask: "255.255.255.240", virtualbox__intnet: "dircentral-net"},
@@ -20,7 +20,7 @@ MACHINES = {
                 ]
   },
   :office1Router => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [  
                    #office1
                    {ip: '192.168.2.1', adapter: 2, netmask: "255.255.255.192", virtualbox__intnet: "devof1-net"},
@@ -34,7 +34,7 @@ MACHINES = {
                 ]
   },
   :office2Router => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [
                    #office2
                    {ip: '192.168.1.1', adapter: 2, netmask: "255.255.255.128", virtualbox__intnet: "devof2-net"},
@@ -47,19 +47,19 @@ MACHINES = {
                 ]
   },
   :centralServer => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [
                    {ip: '192.168.0.2', adapter: 2, netmask: "255.255.255.240", virtualbox__intnet: "centralserver-net"},
         ]
   },
   :office1Server => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [
                    { ip: '192.168.2.2', adapter: 2, netmask: "255.255.255.192", virtualbox__intnet: "off1server-net" },
         ]
   },
   :office2Server => {
-        :box_name => "centos/7",
+        :box_name => "CentOS-7-x86_64-Vagrant-2004_01",
         :net => [
                    { ip: '192.168.1.2', adapter: 2, netmask: "255.255.255.192", virtualbox__intnet: "office2server-net" },
         ]
